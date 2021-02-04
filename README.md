@@ -1,5 +1,5 @@
 # Zip_Distance
-Python 3.x Script for Calculating Geodesic Distances Between a Location and a .csv list of US Zip Codes (centroids).
+Python 3.x Script for Calculating Geodesic Distances Between a selected lat / lon location and a .csv list of US Zip Codes (centroids).
 
 This Python 3.x script is for parsing csv files (containing a column of zip codes- column must be named 'zip') to 
 deterime distances from a set location (Johns Hopkins Center in Baltimore, MD in this example). The output is a new csv file that 
