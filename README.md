@@ -24,6 +24,20 @@ file within this repository for testing. The inputzips.csv file needs to contain
 zip codes that you are interested in determining the distances of from a given location. 
 
 Lastly, the lat /lon parameter for location will need to entered into the ZipCodeDistanceCalculator.py script for the site_coords parameter. 
-Standard lat/lon format is required ex(39.301, -76.575. The coordinates will need to be entered again for the distance_miles field calulation line: 
-df['distance_miles'] = df.apply(calc_distance, site_coords=(39.301, -76.575)
+Standard lat/lon format is required ex(39.301, -76.575). The coordinates will need to be entered again for the distance_miles field calulation line: 
+df['distance_miles'] = df.apply(calc_distance, site_coords=(39.301, -76.575).
+
+# Configuration:
+Download the following files from this repository: ALlzipcodes.csv, inputzips.csv, ZipCodeDistanceCalculator.py- place them in a folder locally located
+as C:\ZipCodeDistance.
+
+Replace the list of zip codes in the inputzips.csv file with the list of zip codes that you would like to find distances to from a given location.
+
+Update the lat / lon parameter in the ZipCodeDistanceCalculator.py python script for the given lat / lon location of interest. 
+
+Execute the script. Once the script completes, there will be two output files in the C:\ZipCodeDistance folder:
+1)ZipDistances.csv which is a list of all joined/found US zip codes that were provided in your list, with a distance_miles column showing the geodesic
+distance in miles to that zip code (centroid).
+2) AllMap.html which is a interactive html file containing a simple folium map with all zip locations plotted as points, centered on the lat / lon
+location coordinates that you set in the script. 
 
