@@ -10,11 +10,11 @@ Rex Robichaux, Jan, 2021. rexmrobichaux@gmail.com
 
 # Dependencies:
 The ZipCodeDistanceCalculator.py script requires the following Python Dependencies / Packages to be installed:
-*pandas
-*os
-*numpy
-*geopy.distance
-*folium
+-pandas
+-os
+-numpy
+-geopy.distance
+-folium
 
 # Requirements: 
 For the script to run, there will need to be a folder named "ZipCodeDistance" created on the local C:\ drive, or the script will need to
