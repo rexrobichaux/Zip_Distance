@@ -19,10 +19,11 @@ The ZipCodeDistanceCalculator.py script requires the following Python 3.x Depend
 # Requirements: 
 For the script to run, there will need to be a folder named "ZipCodeDistance" created on the local C:\ drive, or the script will need to
 be updated to point to the location where the folder has been created (D:\ etc.,). Within the ZipCodeDistance folder, there will need to 
-be the Allzipcodes.csv file (can be found within this repository), as well as the inputzips.csv file. The inputzips.csv file needs to
-contain a single column named "zip" which contains the list of zip codes that you are interested in determining the distances of from a
-given location. 
+be the Allzipcodes.csv file (can be found within this repository), as well as a file named inputzips.csv. There is a sample inputzips.csv
+file within this repository for testing. The inputzips.csv file needs to contain a single column named "zip" which contains the list of 
+zip codes that you are interested in determining the distances of from a given location. 
 
-Lastly, the parameter for location will need to entered into the ZipCodeDistanceCalculator.py script for the site_coords parameter. Standard
-lat/lon format is required ex(39.301, -76.575).
+Lastly, the lat /lon parameter for location will need to entered into the ZipCodeDistanceCalculator.py script for the site_coords parameter. 
+Standard lat/lon format is required ex(39.301, -76.575. The coordinates will need to be entered again for the distance_miles field calulation line: 
+df['distance_miles'] = df.apply(calc_distance, site_coords=(39.301, -76.575)
 
